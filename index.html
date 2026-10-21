@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Productos Químicos</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+    }
+
+    .encabezado {
+        display: block;
+        width: 100%;
+        height: 150px;
+        border: none;
+        overflow: hidden;
+    }
+
+    .zona-principal {
+        display: flex;
+        width: 100%;
+        height: calc(100vh - 150px);
+    }
+
+    .menu {
+        display: block;
+        width: 230px;
+        min-width: 230px;
+        height: 100%;
+        border: none;
+    }
+
+    .contenido {
+        display: block;
+        flex: 1;
+        min-width: 0;
+        height: 100%;
+        border: none;
+    }
+</style>
+</head>
+
+<body>
+
+    <!-- FRAME 1: ENCABEZADO -->
+    <iframe
+        class="encabezado"
+        src="encabezado.html"
+        title="Encabezado">
+    </iframe>
+
+    <div class="zona-principal">
+
+        <!-- FRAME 2: MENÚ -->
+        <iframe
+            class="menu"
+            src="menu.html"
+            name="menuFrame"
+            title="Menú">
+        </iframe>
+
+        <!-- FRAME 3: CONTENIDO -->
+        <iframe
+            class="contenido"
+            src="productos quimicos.html"
+            name="contenidoFrame"
+            title="Contenido">
+        </iframe>
+
+    </div>
+
+</body>
+</html>
+```

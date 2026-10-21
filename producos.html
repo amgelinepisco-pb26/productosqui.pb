@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Químicos</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 25px;
+            font-family: Arial, sans-serif;
+            color: #253858;
+            background: linear-gradient(135deg, white, #f5eaff, #e8f2ff);
+        }
+
+        h1 {
+            text-align: center;
+            color: #164bb7;
+        }
+
+        h2 {
+            color: #7026a5;
+        }
+
+        .descripcion {
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 0;
+            margin-top: 25px;
+        }
+
+        .producto {
+            list-style: none;
+            padding: 18px;
+            background: white;
+            border-left: 5px solid #b14acb;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #d9c8e8;
+            text-align: center;
+        }
+
+        .producto img {
+            width: 100%;
+            height: 170px;
+            object-fit: contain;
+            border-radius: 8px;
+            background: #f8f7fc;
+        }
+
+        .producto strong {
+            display: block;
+            margin-top: 12px;
+            color: #7026a5;
+            font-size: 20px;
+        }
+
+        .producto p {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .aviso {
+            margin-top: 30px;
+            padding: 18px;
+            background: #e6efff;
+            border-left: 5px solid #2878d0;
+            border-radius: 8px;
+            line-height: 1.7;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            background: linear-gradient(90deg, #7026a5, #d946a8, #2878d0);
+            border-radius: 10px;
+        }
+footer a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 20px;
+    color: #7026a5;
+    background: white;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.2s, background 0.2s;
+}
+
+footer a:hover {
+    background: #f5eaff;
+    transform: translateY(-2px);
+}
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Nuestros Productos en Venta</h1>
+
+    <p class="descripcion">
+        En nuestra tienda comercial nos dedicamos a la venta de
+        productos químicos para la limpieza y el cuidado de diferentes
+        espacios. Conoce algunos de nuestros productos:
+    </p>
+
+    <ul class="productos">
+
+        <li class="producto">
+            <img
+                src="https://ecuador.clorox.com/wp-content/uploads/sites/6/2021/02/CLX_CBX_Blnq_ECU_ORIGINAL_1040gr_alta.png"
+                alt="Botella de cloro">
+
+            <strong>Cloro</strong>
+
+            <p>
+                Producto para la desinfección de superficies.
+                Utilízalo siguiendo las instrucciones de la etiqueta.
+            </p>
+        </li>
+
+        <li class="producto">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhBNDQBcs5GjqICfujKG60NL02VFVaxwXts15SDWQtxA&amp;s=10"
+                alt="Producto desinfectante">
+
+            <strong>Desinfectante</strong>
+
+            <p>
+                Para la limpieza de superficies siguiendo
+                las indicaciones del fabricante.
+            </p>
+        </li>
+
+        <li class="producto">
+            <img
+                src="https://kywiec.vtexassets.com/arquivos/ids/197719-800-auto?v=638509599655200000&amp;width=800&amp;height=auto&amp;aspect=true"
+                alt="Botella de detergente líquido">
+
+            <strong>Detergente líquido</strong>
+
+            <p>
+                Ayuda a eliminar la suciedad de prendas y otras
+                superficies, según las instrucciones de uso.
+            </p>
+        </li>
+
+        <li class="producto">
+            <img
+                src="https://cdn0.ecologiaverde.com/es/posts/2/2/7/como_hacer_jabon_liquido_casero_2722_1200.jpg"
+                alt="Jabón líquido">
+
+            <strong>Jabón líquido</strong>
+
+            <p>
+                Producto utilizado para la higiene y limpieza
+                de las manos.
+            </p>
+        </li>
+
+    </ul>
+
+    <div class="aviso">
+        <h2>Recomendaciones de seguridad</h2>
+
+        <p>
+            Lee las etiquetas antes de utilizar los productos.
+            No mezcles cloro con amoníaco, ácidos ni otros limpiadores.
+            Mantén los productos en sus envases originales y fuera
+            del alcance de los niños.
+        </p>
+    </div>
+
+    <footer>
+    <p>
+        <strong>QuímicaLimpia</strong> | Calidad, limpieza y cuidado
+    </p>
+    <a href="https://quimeg.com.ec/"
+       target="_blank"
+       rel="noopener noreferrer">
+        Ver otros productos
+    </a>
+</footer>
+
+
+</body>
+</html>
+```
